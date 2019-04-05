@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clash Of Vikings</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+ 	<meta name="viewport" content="initial-scale=1.0001, minimum-scale=1.0001, maximum-scale=1.0001, user-scalable=no, minimal-ui"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" type="text/css" href="game.css">	
+	<link rel = "shortcut icon" href = "media/graphics/favicon.ico" />
+	<script type="text/javascript" src="game.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+	<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA9ZD2pgBUbakky0Zhqmx7vzPTVqe6Tq2U",
+    authDomain: "mpj1-61a2f.firebaseapp.com",
+    databaseURL: "https://mpj1-61a2f.firebaseio.com",
+    projectId: "mpj1-61a2f",
+    storageBucket: "mpj1-61a2f.appspot.com",
+    messagingSenderId: "1029980104771"
+  };
+  firebase.initializeApp(config);
+  </script>
+</head>
+<div class="gamecenter-activator"></div>
+<body onload="setTimeout(function(){window.scrollTo(0,1)},1);">
+	<div id="ajaxbar"></div>
+		<div id="game"><canvas id="canvas"></canvas></div>	
+		<div id="orientate"><img src="media/graphics/orientate/landscape.jpg" /></div>
+		<div id="play" class="play" onclick=""><img src="media/graphics/splash/mobile/cover-start.jpg" /></div>	
+</body>
+</html>
